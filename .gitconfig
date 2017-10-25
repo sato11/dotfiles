@@ -60,4 +60,3 @@
 	fh  = flow hotfix
 	fhs = flow hotfix start
 	fhf = flow hotfix finish
-	fhp = flow hotfix publish
