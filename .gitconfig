@@ -1,0 +1,25 @@
+[core]
+	excludesfile = /Users/sato11/.gitignore_global
+	editor = /usr/bin/vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Sato Junichi
+	email = villanova911@gmail.com
+[commit]
+	template = /Users/sato11/.stCommitMsg
+[alias]
+	a = add
+	b = branch
+	st = status
+	cm = commit
+	co = checkout
+	pl = pull
+	ps = push
+	cancel = reset --soft HEAD~1
+	difff = diff --word-diff
+	graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+	oneline = log --oneline
