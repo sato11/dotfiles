@@ -9,6 +9,10 @@ deploy: ## Create symlink to home directory
 install: update deploy
 	@exec $$SHELL
 
+unlink:
+	@echo '==> Unlinking dotfiles.'
+	@-$(foreach val, $(DOTFILES), unlink $(HOME)/$(val) && echo Removed $(HOME)/$(val);)
+
 update:
 	git pull origin master
 	@echo ''
