@@ -16,7 +16,6 @@ alias html2slim='for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm 
 
 # git
 alias g='git'
-alias st='git status'
 
 ## git-cli-configuration
 source /usr/local/etc/bash_completion.d/git-completion.bash

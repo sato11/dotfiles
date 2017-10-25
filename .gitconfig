@@ -1,25 +1,63 @@
-[core]
-	excludesfile = /Users/sato11/.gitignore_global
-	editor = /usr/bin/vim
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [user]
-	name = Sato Junichi
+	name  = Sato Junichi
 	email = villanova911@gmail.com
-[commit]
-	template = /Users/sato11/.stCommitMsg
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = /usr/bin/vim
 [alias]
-	a = add
-	b = branch
+	# status/show
+	s  = status
 	st = status
-	cm = commit
-	co = checkout
+	ss = status -s
+	sh = show
+	# commit
+	a   = add
+	c   = commit
+	cam = commit -a --amend
+	co  = checkout
+	cb  = checkout -b
+	cm  = checkout master
+	cd  = checkout develop
+	# branch
+	b  = branch
+	ba = branch -a
+	bm = branch --merged
+	bn = branch --no-merged
+	br = branch -r
+	# fetch/pull/push
+	f  = fetch
+	fp = fetch --prune
 	pl = pull
 	ps = push
-	cancel = reset --soft HEAD~1
-	difff = diff --word-diff
-	graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
-	oneline = log --oneline
+	# diff
+	di  = diff
+	dif = diff
+	dc  = diff --cached
+	ds  = diff --staged
+	dw  = diff --word-diff
+	dcw = diff --color-words
+	# log
+	la  = log --pretty=\"format:%ad %h (%an): %s\" --date=short
+	ll  = log --date=short                --pretty=format:'%Cgreen%h %cd %Cblue%cn%x09%Creset%s'
+	ll1 = log --date=short --max-count=1  --pretty=format:'%Cgreen%h %cd %Cblue%cn%x09%Creset%s'
+	lll = log --date=short --max-count=10 --pretty=format:'%Cgreen%h %cd %Cblue%cn%x09%Creset%s'
+	graph   = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+	ranking = shortlog -s -n --no-merges
+	# rebase
+	rbd = rebase --merge develop
+	rbm = rebase --merge master
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbi = rebase -i
+	# git-flow
+	ff  = flow feature
+	ffs = flow feature start
+	fff = flow feature finish
+	ffp = flow feature publish
+	fr  = flow release
+	frs = flow release start
+	frf = flow release finish
+	fh  = flow hotfix
+	fhs = flow hotfix start
+	fhf = flow hotfix finish
+	fhp = flow hotfix publish
