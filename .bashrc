@@ -18,7 +18,7 @@ alias html2slim='for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm 
 alias g='git'
 
 ## git-cli-configuration
-source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/git-prompt.sh
+source $HOME/git-completion.bash
+source $HOME/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='\[\033[32m\]\u@\h\[\033[00m\]: \[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\] $ '
