@@ -1,7 +1,5 @@
 ## import aliases
-if [ -f ~/.aliases ]; then
-	. ~/.aliases
-fi
+source ~/.aliases
 
 ## git-cli-configuration
 source ~/dotfiles/git-completion.bash
