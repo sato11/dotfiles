@@ -12,7 +12,6 @@ fetch:
 	@echo ''
 
 install: update fetch deploy
-	@exec $$SHELL
 
 unlink:
 	@echo '==> Unlinking dotfiles.'
