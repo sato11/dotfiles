@@ -1,21 +1,9 @@
-# Command
-alias ls='ls -G'
-alias ll='ls -l'
-alias la='ls -a'
-alias lal='la -al'
-
-# Rails
-alias be='bundle exec'
-alias r='bin/rails'
-alias rs4='-p 4000'
-alias rs5='-p 5000'
-alias rake='bin/rake'
-alias rspec='bin/rspec'
-
-alias html2slim='for i in app/views/**/*.erb; do erb2slim $i ${i%erb}slim && rm $i; done'
+## import aliases
+if [ -f ~/.aliases ]; then
+	. ~/.aliases
+fi
 
 ## git-cli-configuration
-alias g='git'
 source ~/dotfiles/git-completion.bash
 source ~/dotfiles/git-prompt.sh
 __git_complete g __git_main # apply completion to alias

@@ -2,6 +2,11 @@ autoload -U compinit && compinit
 autoload -Uz colors && colors
 autoload predict-on && predict-on
 
+## import aliases
+if [ -f ~/.aliases ]; then
+  . ~/.aliases
+fi
+
 source $HOME/zsh-git-prompt/zshrc.sh
 
 PROMPT='( %{$fg[blue]%}%~%{$reset_color%} ) $(git_super_status)
