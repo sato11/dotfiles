@@ -23,3 +23,4 @@ export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
 export PATH=$PATH:$ELASTICPATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="$PATH:$HOME/.yarn/bin"
+export PGDATA=/usr/local/var/postgres
