@@ -13,3 +13,6 @@ alias rs5='-p 5000'
 
 # git
 alias g='git'
+
+# jupyter
+alias jn='jupyter notebook'
