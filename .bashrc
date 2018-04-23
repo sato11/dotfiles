@@ -1,6 +1,9 @@
 ## import aliases
 source ~/.aliases
 
+## import inputrc
+source ~/.inputrc
+
 ## git-cli-configuration
 source ~/dotfiles/git-completion.bash
 source ~/dotfiles/git-prompt.sh
