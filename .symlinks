@@ -1,0 +1,7 @@
+if [ ! -f /usr/local/bin/code ]; then
+    ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
+fi
+
+if [ ! -f /usr/local/bin/subl ]; then
+    ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+fi

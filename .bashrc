@@ -4,6 +4,9 @@ source ~/.aliases
 ## import inputrc
 source ~/.inputrc
 
+## import symlinks
+source ~/.symlinks
+
 ## git-cli-configuration
 source ~/dotfiles/git-completion.bash
 source ~/dotfiles/git-prompt.sh
