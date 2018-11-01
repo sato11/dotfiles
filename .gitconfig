@@ -38,9 +38,9 @@
 	dcw = diff --color-words
 	# log
 	la  = log --pretty=\"format:%ad %h (%an): %s\" --date=short
-	ll  = log --date=short                --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %Creset%s'
-	ll1 = log --date=short --max-count=1  --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %Creset%s'
-	lll = log --date=short --max-count=10 --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %Creset%s'
+	ll  = log --date=short                --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %C(yellow)%d %Creset%s'
+	ll1 = log --date=short --max-count=1  --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %C(yellow)%d %Creset%s'
+	lll = log --date=short --max-count=10 --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %C(yellow)%d %Creset%s'
 	graph   = log --graph --date=short --decorate=short --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %C(yellow bold)%d %Creset%s'
 	ranking = shortlog -s -n --no-merges
 	# rebase
