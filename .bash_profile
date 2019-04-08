@@ -10,7 +10,7 @@ fi
 # User specific environment and startup programs
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
-export PATH
+export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
