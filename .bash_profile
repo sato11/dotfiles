@@ -7,6 +7,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+if [ $(which aws_completer) > /dev/null ]; then
+    complete -C $(which aws_completer) aws
+fi
+
 # User specific environment and startup programs
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
