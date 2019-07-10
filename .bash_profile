@@ -18,6 +18,8 @@ export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 export GO15VENDOREXPERIMENT=1
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go
