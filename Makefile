@@ -9,7 +9,7 @@ deploy: ## Create symlink to home directory
 fetch:
 	test -f git-completion.bash || curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 	test -f git-prompt.sh || curl -O https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-	test -f .vim/colors/solarized.vim || mkdir -p .vim/colors && curl -o .vim/colors/solarized.vim -O https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim
+	test -f .vim/colors/solarized.vim || (mkdir -p .vim/colors && curl -o .vim/colors/solarized.vim -O https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim)
 	./homebrew.sh
 	@echo ''
 
