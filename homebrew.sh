@@ -11,6 +11,7 @@ PACKAGES=(
   nodebrew
   rbenv
   ruby-build
+  tmux
   yarn
 )
 
