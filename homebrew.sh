@@ -7,6 +7,7 @@ PACKAGES=(
   gcc
   git
   git-flow
+  git-secrets
   jq
   nodebrew
   rbenv
@@ -18,3 +19,7 @@ PACKAGES=(
 for PACKAGE in "${PACKAGES[@]}"; do
   brew list $PACKAGE || brew install $PACKAGE
 done
+
+git secrets --register-aws --global
+git secrets --install ~/.git-templates/git-secrets
+git config --global init.templatedir '~/.git-templates/git-secrets'
