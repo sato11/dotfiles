@@ -8,6 +8,7 @@ PACKAGES=(
   git
   git-flow
   git-secrets
+  go
   jq
   nodebrew
   rbenv
