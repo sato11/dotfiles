@@ -1,21 +1,25 @@
-autoload -U compinit && compinit
-autoload -Uz colors && colors
-autoload predict-on && predict-on
+export ZSH=$HOME/dotfiles/ohmyzsh
+
+ZSH_THEME="agnoster"
+plugins=(
+  aws
+  bundler
+  docker
+  docker-compose
+  git
+  kubectl
+  osx
+  rake
+  rbenv
+  ruby
+)
 
 source ~/.aliases
-source $HOME/zsh-git-prompt/zshrc.sh
+source $ZSH/oh-my-zsh.sh
 
-PROMPT='( %{$fg[blue]%}%~%{$reset_color%} ) $(git_super_status)
-%# '
-RPROMPT='[%{$fg[yellow]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}]'
-
-HISTFILE=~/.zsh_historyx
-HISTSIZE=10000
-SAVEHIST=10000
-setopt hist_ignore_dups
-setopt share_history
-
-setopt auto_cd
-setopt auto_pushd
-setopt correct
-setopt list_packed
+# https://github.com/agnoster/agnoster-zsh-theme/issues/39#issuecomment-307338817
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    # prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
