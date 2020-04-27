@@ -5,12 +5,14 @@ which brew > /dev/null || (echo 'homebrew is not installed. exiting.' && exit 1)
 PACKAGES=(
   awscli
   gcc
+  ghq
   git
   git-flow
   git-secrets
   go
   jq
   nodebrew
+  peco
   rbenv
   ruby-build
   tmux
