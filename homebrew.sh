@@ -1,6 +1,6 @@
-# check if homebrew is installed.
-# todo: install when necessary.
-which brew > /dev/null || (echo 'homebrew is not installed. exiting.' && exit 1)
+if [[ ! $(which brew) > /dev/null ]]; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 PACKAGES=(
   awscli
@@ -20,7 +20,11 @@ PACKAGES=(
 )
 
 for PACKAGE in "${PACKAGES[@]}"; do
-  brew list $PACKAGE || brew install $PACKAGE
+  if [[ $(brew list $PACKAGE) > /dev/null ]]; then
+    echo "$PACKAGE is installed."
+  else
+    brew install $PACKAGE
+  fi
 done
 
 git secrets --register-aws --global
