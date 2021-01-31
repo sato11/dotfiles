@@ -26,3 +26,25 @@ done
 git secrets --register-aws --global
 git secrets --install ~/.git-templates/git-secrets
 git config --global init.templatedir '~/.git-templates/git-secrets'
+
+CASKS=(
+  1password
+  alfred
+  aws-vault
+  docker
+  evernote
+  flux
+  iterm2
+  skitch
+  slack
+  visual-studio-code
+  workflowy
+)
+
+for CASK in "${CASKS[@]}"; do
+  if [[ $(brew list --cask $CASK) > /dev/null ]]; then
+    echo "$CASK is installed."
+  else
+    brew install --cask $CASK
+  fi
+done
