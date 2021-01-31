@@ -1,4 +1,8 @@
-export ZSH=$HOME/dotfiles/ohmyzsh
+if [ ! -d $HOME/ohmyzsh ]; then
+  git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/ohmyzsh
+fi
+
+export ZSH=$HOME/ohmyzsh
 
 ZSH_THEME="agnoster"
 plugins=(
