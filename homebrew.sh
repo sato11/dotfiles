@@ -35,11 +35,11 @@ CASKS=(
   1password
   alfred
   aws-vault
+  bettertouchtool
   docker
   evernote
   flux
   iterm2
-  skitch
   slack
   visual-studio-code
   workflowy
