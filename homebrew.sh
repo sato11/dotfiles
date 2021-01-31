@@ -39,7 +39,6 @@ CASKS=(
   evernote
   flux
   iterm2
-  skitch
   slack
   visual-studio-code
   workflowy
