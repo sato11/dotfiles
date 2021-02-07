@@ -3,6 +3,7 @@ if [ ! -d $HOME/ohmyzsh ]; then
 fi
 
 export ZSH=$HOME/ohmyzsh
+export ZSH_DISABLE_COMPFIX="true"
 
 ZSH_THEME="agnoster"
 plugins=(
