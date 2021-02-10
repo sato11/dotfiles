@@ -11,7 +11,7 @@ PACKAGES=(
   git-secrets
   go
   jq
-  nodebrew
+  nodenv
   peco
   rbenv
   ruby-build
