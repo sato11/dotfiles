@@ -10,6 +10,7 @@ code --install-extension ms-vscode-remote.remote-ssh-edit
 code --install-extension ms-vscode-remote.remote-wsl
 code --install-extension ms-vscode-remote.vscode-remote-extensionpack
 code --install-extension ms-vscode.cpptools
+code --install-extension octref.vetur
 code --install-extension rebornix.ruby
 code --install-extension sianglim.slim
 code --install-extension wingrunr21.vscode-ruby
