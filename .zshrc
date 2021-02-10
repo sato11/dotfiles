@@ -40,11 +40,11 @@ function peco-src() {
 }
 zle -N peco-src
 
-export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 export CPLUS_INCLUDE_PATH=/usr/local/include
 
@@ -54,6 +54,5 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
 export PATH=$PATH:$ELASTICPATH
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="$PATH:$HOME/.yarn/bin"
 export PGDATA=/usr/local/var/postgres
