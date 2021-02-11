@@ -10,6 +10,7 @@ PACKAGES=(
   git-flow
   git-secrets
   go
+  hub
   jq
   nodenv
   peco
