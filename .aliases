@@ -4,6 +4,10 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lal='la -al'
 
+# supposing gcc@9 is installed via brew
+alias gcc='gcc-9'
+alias g++='g++-9'
+
 # Rails
 alias b='bundle exec'
 alias bs='bundle exec spring'
