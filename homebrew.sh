@@ -4,7 +4,7 @@ fi
 
 PACKAGES=(
   awscli
-  gcc
+  gcc@9
   ghq
   git
   git-flow
