@@ -36,7 +36,6 @@ CASKS=(
   1password
   alfred
   aws-vault
-  bettertouchtool
   docker
   evernote
   flux
