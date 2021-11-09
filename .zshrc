@@ -13,7 +13,7 @@ plugins=(
   docker-compose
   git
   kubectl
-  osx
+  macos
   rake
   rbenv
   ruby
