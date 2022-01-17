@@ -7,6 +7,8 @@ deploy: ## Create symlink to home directory
 	ln -sfnv ~/dotfiles/.vimrc ~/
 	ln -sfnv ~/dotfiles/.zshrc ~/
 	ln -sfnv ~/dotfiles/.vim ~/
+	ln -sfnv ~/dotfiles/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+	ln -sfnv ~/dotfiles/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	ln -sfnv ~/dotfiles/bin ~/
 
 fetch:
@@ -26,6 +28,8 @@ unlink:
 	unlink ~/.vimrc
 	unlink ~/.zshrc
 	unlink ~/.vim
+	unlink ~/Library/Application\ Support/Code/User/keybindings.json
+	unlink ~/Library/Application\ Support/Code/User/settings.json
 	unlink ~/bin
 
 update:
