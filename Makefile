@@ -1,10 +1,13 @@
-EXCLUSIONS := .DS_Store .git .gitignore
-CANDIDATES := $(wildcard .??*)
-DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
-
 deploy: ## Create symlink to home directory
 	@echo '==> Start to deploy dotfiles to home directory.'
-	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
+	ln -sfnv ~/dotfiles/.aliases ~/
+	ln -sfnv ~/dotfiles/.gitconfig ~/
+	ln -sfnv ~/dotfiles/.gitignore_global ~/
+	ln -sfnv ~/dotfiles/.tmux.conf ~/
+	ln -sfnv ~/dotfiles/.vimrc ~/
+	ln -sfnv ~/dotfiles/.zshrc ~/
+	ln -sfnv ~/dotfiles/.vim ~/
+	ln -sfnv ~/dotfiles/bin ~/
 
 fetch:
 	test -f .vim/colors/solarized.vim || (mkdir -p .vim/colors && curl -o .vim/colors/solarized.vim -O https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim)
@@ -16,7 +19,14 @@ install: update fetch deploy
 
 unlink:
 	@echo '==> Unlinking dotfiles.'
-	@-$(foreach val, $(DOTFILES), unlink $(HOME)/$(val) && echo Removed $(HOME)/$(val);)
+	unlink ~/.aliases
+	unlink ~/.gitconfig
+	unlink ~/.gitignore_global
+	unlink ~/.tmux.conf
+	unlink ~/.vimrc
+	unlink ~/.zshrc
+	unlink ~/.vim
+	unlink ~/bin
 
 update:
 	git pull origin main

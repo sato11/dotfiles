@@ -4,6 +4,7 @@ fi
 
 export ZSH=$HOME/ohmyzsh
 export ZSH_DISABLE_COMPFIX="true"
+export PATH=$PATH:$HOME/bin
 
 ZSH_THEME="agnoster"
 plugins=(
