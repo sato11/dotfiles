@@ -1,0 +1,7 @@
+[
+  {
+    "key": "ctrl+c g",
+    "command": "gitlens.copyShaToClipboard",
+    "when": "editorTextFocus"
+  }
+]
