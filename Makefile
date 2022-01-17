@@ -19,5 +19,5 @@ unlink:
 	@-$(foreach val, $(DOTFILES), unlink $(HOME)/$(val) && echo Removed $(HOME)/$(val);)
 
 update:
-	git pull origin master
+	git pull origin main
 	@echo ''
