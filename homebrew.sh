@@ -40,6 +40,7 @@ CASKS=(
   docker
   evernote
   flux
+  google-japanese-ime
   iterm2
   slack
   visual-studio-code
