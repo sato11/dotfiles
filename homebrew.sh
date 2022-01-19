@@ -38,13 +38,11 @@ CASKS=(
   alfred
   aws-vault
   docker
-  evernote
   flux
   google-japanese-ime
   iterm2
   slack
   visual-studio-code
-  workflowy
 )
 
 for CASK in "${CASKS[@]}"; do
