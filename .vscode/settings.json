@@ -1,3 +1,4 @@
 {
-  "gitlens.advanced.abbreviateShaOnCopy": true
+  "gitlens.advanced.abbreviateShaOnCopy": true,
+  "editor.tabSize": 2
 }
