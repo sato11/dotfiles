@@ -1,0 +1,20 @@
+{
+	"atcoder_template": {
+		"prefix": "atcoder",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"#define rep(i,cc,n) for(int i=cc;i<=n;++i)",
+			"using namespace std;",
+			"",
+			"int Solve($0)",
+			"{",
+			"}",
+			"",
+			"int main()",
+			"{",
+			"  cout << Solve() << \" \" << 0 << endl;",
+			"  return 0;",
+			"}"
+		]
+	}
+}

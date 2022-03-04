@@ -9,6 +9,7 @@ deploy: ## Create symlink to home directory
 	ln -sfnv ~/dotfiles/.vim ~/
 	ln -sfnv ~/dotfiles/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 	ln -sfnv ~/dotfiles/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+	ln -sfnv ~/dotfiles/.vscode/snippets/cpp.json ~/Library/Application\ Support/Code/User/snippets/cpp.json
 	ln -sfnv ~/dotfiles/bin ~/
 
 fetch:
