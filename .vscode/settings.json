@@ -5,5 +5,8 @@
   "files.trimFinalNewlines": true,
   "files.associations": {
     "*.jb": "ruby"
-  }
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "explorer.confirmDelete": false,
+  "workbench.startupEditor": "none"
 }
