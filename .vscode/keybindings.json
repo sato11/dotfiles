@@ -3,5 +3,15 @@
     "key": "ctrl+c g",
     "command": "gitlens.copyShaToClipboard",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+left",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
   }
 ]
