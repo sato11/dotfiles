@@ -4,6 +4,8 @@ fi
 
 PACKAGES=(
   awscli
+  bat
+  fd
   gcc@9
   gh
   ghq
@@ -16,7 +18,9 @@ PACKAGES=(
   nodenv
   peco
   rbenv
+  ripgrep
   ruby-build
+  sd
   tmux
   yarn
 )
