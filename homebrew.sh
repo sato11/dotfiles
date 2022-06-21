@@ -6,6 +6,7 @@ PACKAGES=(
   awscli
   bat
   fd
+  fzf
   gcc@9
   gh
   ghq
