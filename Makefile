@@ -1,6 +1,7 @@
 deploy: ## Create symlink to home directory
 	@echo '==> Start to deploy dotfiles to home directory.'
 	ln -sfnv ~/dotfiles/.aliases ~/
+	ln -sfnv ~/dotfiles/.gemrc ~/
 	ln -sfnv ~/dotfiles/.gitconfig ~/
 	ln -sfnv ~/dotfiles/.gitconfig.local ~/
 	ln -sfnv ~/dotfiles/.gitignore_global ~/
@@ -24,6 +25,7 @@ install: update fetch deploy
 unlink:
 	@echo '==> Unlinking dotfiles.'
 	unlink ~/.aliases
+	unlink ~/.gemrc
 	unlink ~/.gitconfig
 	unlink ~/.gitignore_global
 	unlink ~/.tmux.conf
