@@ -10,7 +10,6 @@
 [alias]
 	# status/show
 	s  = status
-	st = status
 	ss = status -s
 	sh = show
 	# commit
@@ -19,8 +18,9 @@
 	cam = commit -a --amend
 	co  = checkout
 	cb  = checkout -b
-	cm  = checkout master
 	cd  = checkout develop
+	cm  = checkout main
+	cmm = checkout master
 	# branch
 	b  = branch
 	ba = branch -a
@@ -31,6 +31,7 @@
 	f  = fetch
 	fp = fetch --prune
 	pl = pull
+	pp = pull --prune
 	ps = push
 	# diff
 	di  = diff
@@ -47,22 +48,11 @@
 	graph   = log --graph --date=short --decorate=short --pretty=format:'%C(yellow)%h %C(magenta)%cd %C(cyan)%cn %C(yellow bold)%d %Creset%s'
 	ranking = shortlog -s -n --no-merges
 	# rebase
+	rb  = rebase --merge
 	rbd = rebase --merge develop
-	rbm = rebase --merge master
 	rba = rebase --abort
 	rbc = rebase --continue
 	rbi = rebase -i
-	# git-flow
-	ff  = flow feature
-	ffs = flow feature start
-	fff = flow feature finish
-	ffp = flow feature publish
-	fr  = flow release
-	frs = flow release start
-	frf = flow release finish
-	fh  = flow hotfix
-	fhs = flow hotfix start
-	fhf = flow hotfix finish
 [secrets]
 	providers = git secrets --aws-provider
 	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
