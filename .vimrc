@@ -32,5 +32,5 @@ set whichwrap=b,s,h,l,<,>,[,]
 " Color Scheme
 syntax on
 let g:solarized_termcolors=256
-set background=dark
+set background=light
 colorscheme solarized

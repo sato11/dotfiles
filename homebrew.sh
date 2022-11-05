@@ -5,6 +5,7 @@ fi
 PACKAGES=(
   awscli
   bat
+  coreutils
   fd
   fzf
   gcc@9

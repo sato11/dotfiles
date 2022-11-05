@@ -6,7 +6,12 @@ export ZSH=$HOME/ohmyzsh
 export ZSH_DISABLE_COMPFIX="true"
 export PATH=$PATH:$HOME/bin
 
-ZSH_THEME="agnoster"
+if [ ! -f $ZSH/custom/themes/passion.zsh-theme ]; then
+  curl -o $ZSH/custom/themes/passion.zsh-theme \
+    -O https://raw.githubusercontent.com/ChesterYue/ohmyzsh-theme-passion/master/passion.zsh-theme
+fi
+
+ZSH_THEME="passion"
 plugins=(
   aws
   bundler
@@ -22,13 +27,6 @@ plugins=(
 
 source ~/.aliases
 source $ZSH/oh-my-zsh.sh
-
-# https://github.com/agnoster/agnoster-zsh-theme/issues/39#issuecomment-307338817
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    # prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-  fi
-}
 
 bindkey '^]' peco-src
 function peco-src() {
