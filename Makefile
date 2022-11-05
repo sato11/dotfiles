@@ -16,7 +16,8 @@ deploy: ## Create symlink to home directory
 
 fetch:
 	test -f .vim/colors/solarized.vim || (mkdir -p .vim/colors && curl -o .vim/colors/solarized.vim -O https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim)
-	./homebrew.sh
+	./install-homebrew.sh
+	brew bundle
 	./vscode.sh
 	@echo ''
 
