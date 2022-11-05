@@ -17,7 +17,9 @@ plugins=(
   bundler
   docker
   docker-compose
+  fzf
   git
+  gh
   kubectl
   macos
   rake
