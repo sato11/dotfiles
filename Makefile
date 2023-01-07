@@ -1,11 +1,13 @@
 deploy: ## Create symlink to home directory
 	@echo '==> Start to deploy dotfiles to home directory.'
 	ln -sfnv ~/dotfiles/.aliases ~/
+	ln -sfnv ~/dotfiles/.asdfrc ~/
 	ln -sfnv ~/dotfiles/.gemrc ~/
 	ln -sfnv ~/dotfiles/.gitconfig ~/
 	ln -sfnv ~/dotfiles/.gitconfig.local ~/
 	ln -sfnv ~/dotfiles/.gitignore_global ~/
 	ln -sfnv ~/dotfiles/.tmux.conf ~/
+	ln -sfnv ~/dotfiles/.tool-versions ~/
 	ln -sfnv ~/dotfiles/.vimrc ~/
 	ln -sfnv ~/dotfiles/.zshrc ~/
 	ln -sfnv ~/dotfiles/.vim ~/

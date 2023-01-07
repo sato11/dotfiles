@@ -2,6 +2,10 @@ if [ ! -d $HOME/ohmyzsh ]; then
   git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/ohmyzsh
 fi
 
+if [ ! -d $HOME/.asdf ]; then
+  git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.10.2
+fi
+
 export ZSH=$HOME/ohmyzsh
 export ZSH_DISABLE_COMPFIX="true"
 export PATH=$PATH:$HOME/bin
@@ -13,6 +17,7 @@ fi
 
 ZSH_THEME="passion"
 plugins=(
+  asdf
   aws
   bundler
   docker
@@ -23,7 +28,6 @@ plugins=(
   kubectl
   macos
   rake
-  rbenv
   ruby
 )
 
@@ -41,21 +45,13 @@ function peco-src() {
 }
 zle -N peco-src
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
 export CPLUS_INCLUDE_PATH=/usr/local/include
 
-export GOROOT=$(brew --prefix go)/libexec
-export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+export GOROOT=$(asdf where golang)/go
+export PATH=$PATH:$GOROOT/bin
 
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
 export PATH=$PATH:$ELASTICPATH
-export PATH="$PATH:$HOME/.yarn/bin"
 export PGDATA=/usr/local/var/postgres
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
