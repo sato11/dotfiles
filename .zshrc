@@ -48,7 +48,6 @@ export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
 export PATH=$PATH:$ELASTICPATH
-export PATH="$PATH:$HOME/.yarn/bin"
 export PGDATA=/usr/local/var/postgres
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

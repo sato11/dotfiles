@@ -20,7 +20,6 @@ brew "ripgrep"
 brew "ruby-build"
 brew "sd"
 brew "tmux"
-brew "yarn"
 
 cask "1password"
 cask "aws-vault"
