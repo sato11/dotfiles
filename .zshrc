@@ -42,10 +42,6 @@ zle -N peco-src
 
 export CPLUS_INCLUDE_PATH=/usr/local/include
 
-export GOROOT=$(brew --prefix go)/libexec
-export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
-
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
 export PATH=$PATH:$ELASTICPATH
 export PGDATA=/usr/local/var/postgres
