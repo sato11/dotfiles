@@ -40,9 +40,6 @@ function peco-src() {
 }
 zle -N peco-src
 
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
 export CPLUS_INCLUDE_PATH=/usr/local/include
 
 export GOROOT=$(brew --prefix go)/libexec
