@@ -2,6 +2,10 @@ if [ ! -d $HOME/ohmyzsh ]; then
   git clone https://github.com/ohmyzsh/ohmyzsh.git $HOME/ohmyzsh
 fi
 
+if [ ! -d $HOME/.asdf ]; then
+  git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.10.2
+fi
+
 export ZSH=$HOME/ohmyzsh
 export ZSH_DISABLE_COMPFIX="true"
 export PATH=$PATH:$HOME/bin
@@ -13,6 +17,7 @@ fi
 
 ZSH_THEME="passion"
 plugins=(
+  asdf
   aws
   bundler
   docker
@@ -41,6 +46,9 @@ function peco-src() {
 zle -N peco-src
 
 export CPLUS_INCLUDE_PATH=/usr/local/include
+
+export GOROOT=$(asdf where golang)/go
+export PATH=$PATH:$GOROOT/bin
 
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
 export PATH=$PATH:$ELASTICPATH
