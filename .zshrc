@@ -23,7 +23,6 @@ plugins=(
   kubectl
   macos
   rake
-  rbenv
   ruby
 )
 
@@ -40,9 +39,6 @@ function peco-src() {
   zle -R -c
 }
 zle -N peco-src
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
