@@ -1,8 +1,6 @@
 brew "awscli"
 brew "bat"
 brew "coreutils"
-brew "elixir"
-brew "erlang"
 brew "fd"
 brew "fzf"
 brew "gcc@9"
