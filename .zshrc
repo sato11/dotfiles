@@ -32,6 +32,7 @@ plugins=(
 )
 
 source ~/.aliases
+source ~/.asdf/plugins/golang/set-env.zsh
 source $ZSH/oh-my-zsh.sh
 
 bindkey '^]' peco-src
@@ -45,11 +46,8 @@ function peco-src() {
 }
 zle -N peco-src
 
+export ASDF_GOLANG_MOD_VERSION_ENABLED=false
 export CPLUS_INCLUDE_PATH=/usr/local/include
-
-export GOROOT=$(asdf where golang)/go
-export PATH=$PATH:$GOROOT/bin
-
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
 export PATH=$PATH:$ELASTICPATH
 
