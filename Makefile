@@ -20,6 +20,8 @@ fetch:
 	test -f .vim/colors/solarized.vim || (mkdir -p .vim/colors && curl -o .vim/colors/solarized.vim -O https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim)
 	./install-homebrew.sh
 	brew bundle
+	./asdf-plugins.sh
+	asdf install
 	./vscode.sh
 	@echo ''
 
