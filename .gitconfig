@@ -3,6 +3,7 @@
 [user]
 	name  = Junichi Sato
 	email = 22004610+sato11@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII4l2q5QcW6O7KpPBVvlQCu/3abwMcFdJvpDhtJXcTAY
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
@@ -65,3 +66,9 @@
 	defaultBranch = main
 [ghq]
 	root = ~/src
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
