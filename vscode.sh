@@ -21,9 +21,8 @@ code --install-extension ms-vscode.cpptools-themes
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pgourlain.erlang
 code --install-extension phoenixframework.phoenix
-code --install-extension rebornix.ruby
 code --install-extension sianglim.slim
 code --install-extension sjhuangx.vscode-scheme
+code --install-extension Shopify.ruby-lsp
 code --install-extension twxs.cmake
-code --install-extension wingrunr21.vscode-ruby
 code --install-extension wraith13.wandbox-vscode
