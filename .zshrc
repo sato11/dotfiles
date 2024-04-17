@@ -33,6 +33,10 @@ plugins=(
 
 source ~/.aliases
 source ~/.asdf/plugins/golang/set-env.zsh
+
+# https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#disable-async-git-prompt
+# https://github.com/ohmyzsh/ohmyzsh/issues/12328#issuecomment-2043492331
+zstyle ':omz:alpha:lib:git' async-prompt no
 source $ZSH/oh-my-zsh.sh
 
 bindkey '^]' peco-src
