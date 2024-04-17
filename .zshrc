@@ -3,7 +3,7 @@ if [ ! -d $HOME/ohmyzsh ]; then
 fi
 
 if [ ! -d $HOME/.asdf ]; then
-  git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.10.2
+  git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.14.0
 fi
 
 export ZSH=$HOME/ohmyzsh
