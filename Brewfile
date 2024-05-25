@@ -15,6 +15,7 @@ brew "julia"
 brew "peco"
 brew "ripgrep"
 brew "ruby-build"
+brew "sbcl"
 brew "sd"
 brew "tmux"
 
