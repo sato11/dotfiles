@@ -75,7 +75,23 @@
 [interactive]
 	diffFilter = delta --color-only
 [delta]
-	navitage = true
+	features = zebra-light
+	hyperlinks = true
+	hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+	line-numbers = true
+	navigate = true
+[delta "zebra-light"] # https://github.com/dandavison/delta/blob/0.17.0/themes.gitconfig#L315
+	minus-style = syntax "#fbdada"
+	minus-emph-style = syntax "#f6b6b6"
+	plus-style = syntax "#d6ffd6"
+	plus-emph-style = syntax "#adffad"
+	map-styles = \
+		bold purple => syntax "#feecf7", \
+		bold blue => syntax "#e5dff6", \
+		bold cyan => syntax "#d8fdf6", \
+		bold yellow => syntax "#f4ffe0"
+	zero-style = syntax
+	whitespace-error-style = "#aaaaaa"
 [merge]
 	conflictstyle = diff3
 [diff]
