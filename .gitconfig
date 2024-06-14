@@ -7,7 +7,7 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
-	pager = less -F -X
+	pager = delta
 [alias]
 	# status/show
 	s  = status
@@ -72,3 +72,11 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navitage = true
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
