@@ -80,6 +80,7 @@
 	hyperlinks-file-link-format = "vscode://file/{path}:{line}"
 	line-numbers = true
 	navigate = true
+	whitespace-error-style = "magenta reverse"
 [delta "zebra-light"] # https://github.com/dandavison/delta/blob/0.17.0/themes.gitconfig#L315
 	minus-style = syntax "#fbdada"
 	minus-emph-style = syntax "#f6b6b6"
