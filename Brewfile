@@ -19,6 +19,7 @@ brew "rlwrap"
 brew "ruby-build"
 brew "sbcl"
 brew "sd"
+brew "shellcheck"
 brew "tmux"
 
 cask "1password"
