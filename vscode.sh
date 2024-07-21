@@ -21,6 +21,7 @@ code --install-extension ms-vscode.cpptools-themes
 code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension pgourlain.erlang
 code --install-extension phoenixframework.phoenix
+code --install-extension qingpeng.common-lisp
 code --install-extension sianglim.slim
 code --install-extension sjhuangx.vscode-scheme
 code --install-extension Shopify.ruby-lsp
