@@ -18,6 +18,3 @@ alias td='tmux detach'
 
 # aws-vault
 alias aws='aws-vault exec "${AWS_DEFAULT_PROFILE:-home}" -- /usr/local/bin/aws'
-
-# vscode
-alias code='code -a'
