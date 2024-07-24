@@ -1,13 +1,13 @@
 {
-  "gitlens.advanced.abbreviateShaOnCopy": true,
   "editor.tabSize": 2,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
+  "explorer.confirmDelete": false,
   "files.associations": {
     "*.jb": "ruby"
   },
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "gitlens.advanced.abbreviateShaOnCopy": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "explorer.confirmDelete": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Quiet Light"
 }
