@@ -53,6 +53,7 @@ zle -N peco-src
 export ASDF_GOLANG_MOD_VERSION_ENABLED=false
 export CPLUS_INCLUDE_PATH=/usr/local/include
 export ELASTICPATH=/usr/local/opt/elasticsearch/libexec/bin
+export PATH=$PATH:$(go env GOPATH)/bin
 export PATH=$PATH:$ELASTICPATH
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
