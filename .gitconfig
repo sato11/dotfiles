@@ -63,6 +63,7 @@
 [gpg "ssh"]
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
+	cleanup = scissors
 	gpgsign = true
 [interactive]
 	diffFilter = delta --color-only
