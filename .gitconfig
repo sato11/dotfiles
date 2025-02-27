@@ -65,6 +65,7 @@
 [commit]
 	cleanup = scissors
 	gpgsign = true
+	verbose = true
 [interactive]
 	diffFilter = delta --color-only
 [delta]
