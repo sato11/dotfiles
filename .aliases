@@ -15,6 +15,3 @@ alias g='git'
 alias t='tmux'
 alias ta='tmux attach'
 alias td='tmux detach'
-
-# aws-vault
-alias aws='aws-vault exec "${AWS_DEFAULT_PROFILE:-home}" -- /usr/local/bin/aws'
