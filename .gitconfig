@@ -10,6 +10,15 @@
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
 	pager = delta
+[branch]
+	sort = -committerdate
+[tag]
+	sort = -version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [alias]
 	# status/show
 	s  = status
