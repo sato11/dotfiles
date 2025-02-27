@@ -4,6 +4,8 @@
 	name  = Junichi Sato
 	email = 22004610+sato11@users.noreply.github.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII4l2q5QcW6O7KpPBVvlQCu/3abwMcFdJvpDhtJXcTAY
+[column]
+	ui = auto
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = /usr/bin/vim
