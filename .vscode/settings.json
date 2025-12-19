@@ -9,6 +9,7 @@
   "gitlens.advanced.abbreviateShaOnCopy": true,
   "gitlens.rebaseEditor.openOnPausedRebase": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.suggest.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Quiet Light"
 }
