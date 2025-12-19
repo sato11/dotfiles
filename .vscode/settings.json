@@ -7,6 +7,7 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "gitlens.advanced.abbreviateShaOnCopy": true,
+  "gitlens.rebaseEditor.openOnPausedRebase": false,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Quiet Light"
