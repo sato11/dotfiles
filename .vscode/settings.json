@@ -1,5 +1,6 @@
 {
   "accessibility.signalOptions.volume": 0,
+  "chat.agent.enabled": false,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
   "files.associations": {
